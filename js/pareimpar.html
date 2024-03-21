@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificador de Número Par ou Ímpar</title>
+</head>
+<body>
+    <h1>Verificador de Número Par ou Ímpar</h1>
+    <p>Digite um número abaixo e clique no botão para verificar se é par ou ímpar:</p>
+    <input type="text" id="numeroInput">
+    <button onclick="verificarParOuImpar()">Verificar</button>
+    <p id="resultado"></p>
+
+    <script>
+        function verificarParOuImpar() {
+            var numero = parseInt(document.getElementById("numeroInput").value);
+
+            if (isNaN(numero)) {
+                document.getElementById("resultado").innerText = "Por favor, digite um número válido.";
+            } else {
+                if (numero % 2 === 0) {
+                    document.getElementById("resultado").innerText = numero + " é um número par.";
+                    window.location.href="file:///C:/Users/wendell.foliveira/Desktop/js/par.html";
+                } else {
+                    document.getElementById("resultado").innerText = numero + " é um número ímpar.";
+                    window.location.href="file:///C:/Users/wendell.foliveira/Desktop/js/impar.html";
+                }
+            }
+        }
+    </script>
+</body>
+</html>
