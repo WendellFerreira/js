@@ -1,0 +1,16 @@
+[
+    {
+      "id": 1,
+      "nome": "Hotel Exemplo",
+      "localizacao": "São Paulo",
+      "descricao": "Um hotel maravilhoso no centro de São Paulo.",
+      "imagem": "img/hotel_de_luxo_em_sao_paulo.jpg"
+    },
+    {
+      "id": 2,
+      "nome": "Hotel Luxo",
+      "localizacao": "Rio de Janeiro",
+      "descricao": "Hotel de luxo com vista para a praia.",
+      "imagem": "img/hotel_rj.webp"
+    }
+  ]
